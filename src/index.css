@@ -1,0 +1,36 @@
+/* =========================
+   THEME VARIABLES
+========================= */
+
+/* DARK THEME */
+:root[data-theme="dark"] {
+  --bg: #0b0f14;
+  --bg-soft: #121821;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #34f5c5;
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+/* LIGHT THEME */
+:root[data-theme="light"] {
+  --bg: #f9fafb;
+  --bg-soft: #ffffff;
+  --card-bg: rgba(0, 0, 0, 0.04);
+  --text: #111827;
+  --muted: #4b5563;
+  --accent: #10b981;
+  --border: rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+  font-family: system-ui, sans-serif;
+}

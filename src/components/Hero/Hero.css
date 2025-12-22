@@ -1,0 +1,79 @@
+/* 🔒 Critical: prevents horizontal scroll */
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* 📝 Text */
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: var(--text);
+}
+
+.hero-content h1 span {
+  color: var(--accent);
+}
+
+.hero-content h3 {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: var(--text);
+}
+
+.hero-content .typed {
+  color: var(--accent);
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: var(--accent);
+}
+
+.hero-content p {
+  margin-top: 1rem;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+/* 🧍 Image */
+.hero-image {
+  flex-shrink: 0;
+  max-width: 380px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  display: block;
+}
+
+/* ⏳ Cursor blink */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 2rem 5%;
+  }
+
+  .hero-image {
+    margin-bottom: 2rem;
+  }
+}
