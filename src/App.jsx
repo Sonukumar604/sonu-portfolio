@@ -14,7 +14,15 @@ export default function App() {
       <Hero />
       <About />
       <Skills />
-      <Projects />
+      <div id="projects" style={{ backgroundColor: "var(--nav-bg)", color: "var(--text)" }}>
+        <style>{`
+          #projects, #projects > * {
+            background-color: var(--nav-bg) !important;
+            color: var(--text) !important;
+          }
+        `}</style>
+        <Projects />
+      </div>
       <Internship />
       <Contact />
       <Footer />
